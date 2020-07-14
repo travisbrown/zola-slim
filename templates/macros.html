@@ -24,7 +24,7 @@
 {% endmacro header %}
 
 {% macro post_header(page) %}
-<h2 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+<h1 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
 <div class="post-header">
     <span class="post-date">{{ page.date | date(format="%B %d, %Y") }}</span>
     {% if page.taxonomies.tags %}
