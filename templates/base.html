@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link rel="stylesheet" href="{{ get_url(path="slim.css", trailing_slash=false) }}">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet'
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CSource+Code+Pro' rel='stylesheet'
         type='text/css'>
     {% if config.generate_rss %}
     <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS"
