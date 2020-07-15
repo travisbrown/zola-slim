@@ -44,8 +44,8 @@
     {% if config.extra.slim_summary %}
     {% if page.summary %}
     <div class="summary">
-        {{ page.summary | safe | striptags }}
-        <a class="read-more" href="{{ page.permalink }}">&hellip;</a>
+        {{ page.summary | safe }}
+        <a class="read-more" href="{{ page.permalink | safe }}">Continue reading</a>
     </div>
     {% endif %}
     {% elif config.extra.slim_content %}
